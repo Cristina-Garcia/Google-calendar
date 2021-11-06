@@ -1,0 +1,47 @@
+.search-users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  inline-size: 12.25rem;
+  block-size: 2.5rem;
+  background: var(--gray10);
+  border-radius: 0.25rem;
+  margin-block-end: 1.5rem;
+}
+.search {
+  border: none;
+  background: var(--gray10);
+  color: var(--gray20);
+  font: var(--body1-regular);
+  background: url(../icon/users.svg);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  padding-inline-start: 1.5rem;
+}
+/* .calendarList {
+  padding-block-start: 1.5rem;
+} */
+.calendarList-contract {
+  list-style: none;
+  font: var(--body1-medium);
+  color: var(--gray30);
+  padding-block-end: 0.5rem;
+  background-image: url(../icon/chevronUp.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.user-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.user-options span {
+  color: var(--gray30);
+  font: var(--body1-regular);
+}
+
+.user-options:focus {
+  background: var(--gray10);
+}
