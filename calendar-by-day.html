@@ -57,7 +57,7 @@
                 <i class="icon-chevronRight"aria-hidden="true"></i>
               </a>
             </span>
-          <time class="calendarStatus-date" datetime="25-06-2021">10 Noviembre 2021</time>
+          <time class="calendarStatus-date" datetime="07-11-2021">07 Noviembre 2021</time>
           </div>
         </div>
         <div class="header-secondary">
@@ -78,7 +78,7 @@
         </button>
         <div class="miniCalendar" aria-label="calendario de navegacion">
           <div class="miniCalendar-status">
-            <time class="miniCalendar-date" datetime="2021-06">Noviembre 2021</time>
+            <time class="miniCalendar-date" datetime="2021-11">  Noviembre 2021</time>
             <div class="miniCalendar-navigation">
               <a class="button is-compact" href="#prevMonth" aria-label="Mes anterior">
                 <i class="icon-chevronLeft" aria-hidden="true"></i>
@@ -168,13 +168,13 @@
           
         </div>
       </div>
-      <main>
-        <div class="currentTime"></div>
+      <main class="calendar">
+        <div class="currentTime is-byDay"></div>
         <div class="calendar-byDay">
           <div class="timezoneCell">GMT-5</div>
-          <h2 class="calendarDay is-selected">
+          <h2 class="calendarDay  is-selected">
               <a href="/" aria-label="Domingo 7 de Noviembre">
-                  <time datetime="2021-06-10">
+                  <time datetime="2021-11-07">
                   <span>DOM</span> <br>
                    <span>7</span>
                   </time>
@@ -211,7 +211,14 @@
           <span class="hourCell">2 PM</span>
           <div class="taskCell"></div>
           <span class="hourCell">3 PM</span>
-          <div class="taskCell"></div>
+          <div class="taskCell">
+            <div tabindex="0" class="task" aria-label="de 15:00 a 17:00, hacer ejercicio">
+              <p>Cine</p>
+              <p>
+                <time datetime="15:00">3</time>-<time datetime="17:00">5 pm</time>
+              </p>
+            </div>
+          </div>
           <span class="hourCell">4 PM</span>
           <div class="taskCell"></div>
           <span class="hourCell">5 PM</span>
@@ -232,6 +239,63 @@
 
       </main>
     </div>
-      
+     <dialog  class="modal">
+      <form class="createTask">
+        <div class="input is-outstanding">
+          <div class="input-body">
+            <input required name="title" type="text" placeholder="Añade un título">
+          </div>
+        </div>
+        <div class="input">
+          <i class="icon-clock"></i>
+          <div class="input-body">
+            <input type="date" name="date" required>
+            <input type="time"name="time-start" required >
+            <input type="time" name="time-end" required>
+          </div>
+        </div>
+        <div class="input">
+          <i class="icon-users"></i>
+          <div class="input-body">
+            <input type="text" list="guests" name="guests" placeholder="Agregar Invitados" required>
+            <datalist id="guests">
+              <option value="leonidas"></option>
+              <option value="Carlos"></option>
+              <option value="Miguel"></option>
+              <option value="Sandra"></option>
+              <option value="Cristopher"></option>
+            </datalist>  
+          </div>
+        </div>
+        <div class="input">
+          <i class="icon-gps"></i>
+         <div class="input-body">
+           <input name="location" type="text" placeholder="Agregar Ubicación">
+         </div>
+        </div>
+        <div class="input">
+          <div class="icon-text"></div>
+          <div class="inpu-body">
+            <input type="file" multiple>
+          </div>
+        </div>
+        <div class="input">
+          <i class="icon-text"></i>
+          <div class="input-body">
+
+            <textarea name="Description" laceholder="Agregar Descripción" id="" cols="30" rows="2"></textarea>
+          </div>
+        </div>
+        
+      </form>
+      <div class="modal-actions">
+        <button id="close-modal"class="button">Cancelar</button>
+        <button class="button is-primary">Guardar</button>
+      </div>
+    </dialog>
+     <script src="./js/app.js" type="module">
+        // document.querySelector('.modal').showModal()
+        
+     </script>
   </body>
 </html>
