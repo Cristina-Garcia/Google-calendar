@@ -5,6 +5,7 @@
 @import "./hour-cell.css";
 @import "./current-time.css";
 @import "./calendar-list.css";
+@import "./calendar-byDay.css";
 
 .calendar {
   color: var(--gray20);
@@ -15,6 +16,7 @@
   --maxInlineSize: 1fr;
   position: relative;
 }
+
 .calendar-week {
   display: grid;
   grid-template-columns: auto repeat(
@@ -26,7 +28,4 @@
       minmax(var(--minBlockSize), var(--maxBlockSize))
     );
   min-block-size: 700px;
-}
-
-.calendar-day {
 }

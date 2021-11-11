@@ -30,8 +30,6 @@
   grid-template-rows: repeat(7, var(--cellSize));
   /* grid-template-rows: ; */
 }
-.miniCalendar-navigation {
-}
 
 .miniCalendar-monthDay {
   line-height: var(--cellSize);
