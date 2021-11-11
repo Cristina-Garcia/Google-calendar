@@ -9,4 +9,5 @@
   background-image: url("../icon/chevronDown.svg");
   background-repeat: no-repeat;
   background-position: right 0.5rem center;
+  cursor: pointer;
 }

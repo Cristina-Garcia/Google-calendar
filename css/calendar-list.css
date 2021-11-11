@@ -30,6 +30,7 @@
   background-image: url(../icon/chevronUp.svg);
   background-repeat: no-repeat;
   background-position: right;
+  cursor: pointer;
 }
 
 .user-options {

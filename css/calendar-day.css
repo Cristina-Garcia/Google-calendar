@@ -11,6 +11,9 @@
   border-block-end: 1px solid currentColor;
 }
 
+.calendar-byDay .calendarDay a {
+  align-self: flex-start;
+}
 .calendarDay a {
   text-decoration: none;
   color: currentColor;

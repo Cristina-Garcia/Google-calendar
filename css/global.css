@@ -17,6 +17,11 @@
   --body2-medium: 500 0.75rem/1rem Roboto;
   --button-button: 500 0.875rem/1rem Roboto;
   --subtitle-subtitle1: 400 1.375rem/1.75rem Roboto;
+
+  --blockSize: 100vh;
+  --BlockSizeHeader: 6rem;
+  --InlineSizeSidebar: 16.25rem;
+  --BlockSizeSidebar: 35rem;
 }
 
 body {

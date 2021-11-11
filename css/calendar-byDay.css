@@ -1,4 +1,6 @@
 .calendar-byDay {
+  --minBlockSize: 4rem;
+  --maxBlockSize: auto;
   display: grid;
   grid-template-columns:
     auto

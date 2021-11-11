@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+  background: var(--white);
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+}
+
+.calendar::-webkit-scrollbar-thumb:vertical {
+  background: var(--gray20);
+}
+
+.sidebar::-webkit-scrollbar-thumb:vertical:hover {
+  background: var(--gray20);
+}
